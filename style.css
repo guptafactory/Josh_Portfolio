@@ -1,0 +1,219 @@
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings: "liga" 1, "calt" 1;
+}
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: InterVariable, sans-serif;
+  }
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f0f0f6;
+}
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+a,
+a::before,
+a::after,
+a:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+ul {
+  list-style: none;
+}
+.row {
+  display: flex;
+}
+
+.white-bg {
+  background-color: white;
+}
+
+/* Navbar starts */
+header {
+  align-items: center;
+  justify-content: space-between;
+  gap: 2em;
+  padding: 1.5em 5em;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+.logo {
+  align-items: center;
+  position: sticky;
+}
+.logo img {
+  max-width: 350px;
+}
+nav ul {
+  gap: 2em;
+  align-items: center;
+}
+nav a {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+/* Navbar ends */
+.hero {
+  gap: 1em;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  min-height: calc(100vh - 93.6px);
+  margin-top: 5px;
+}
+.hero > * {
+  flex: 1 1 25em;
+}
+.hero h2 {
+  font-weight: 600;
+  font-size: clamp(35px, 5vw, 70px);
+  line-height: 1;
+}
+.hero p {
+  font-weight: 500;
+  font-size: 20px;
+  padding: 1em 0;
+  color: #767676;
+}
+/* .hero a {
+  font-weight: 700;
+  font-size: 20px;
+  padding: 0.3em 1em;
+} */
+.hero-btn {
+  background-color: #ffb400;
+  padding: 20px;
+  border-style: none;
+  width: 200px;
+  border-radius: 10px;
+}
+.hero-btn img {
+  width: 13px;
+}
+/* Media queries starts*/
+
+@media screen and (max-width: 900px) {
+  .toggleMenu {
+    position: absolute;
+    right: 5%;
+    background-image: url(./assets/open_nav.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    width: 30px;
+    height: 30px;
+    padding: 2em;
+    z-index: 100;
+    transition: background-size 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+  }
+  .toggleMenu.active {
+    position: fixed;
+    background-image: url(./assets/close_nav.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+  }
+  .navigation {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-height: 0;
+    opacity: 0;
+    transform-origin: top;
+    transform: scale(1, 0);
+    -webkit-transform: scale(1, 0);
+    -moz-transform: scale(1, 0);
+    -ms-transform: scale(1, 0);
+    -o-transform: scale(1, 0);
+  }
+  .navigation.active {
+    position: fixed;
+    inset: 0;
+    margin: auto;
+    min-height: 100%;
+    opacity: 1;
+    background-color: antiquewhite;
+    transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+  }
+  nav ul {
+    flex-direction: column;
+  }
+}
+
+/* Projects start */
+.projects {
+  padding: 15px 9%;
+  padding-bottom: 100px;
+}
+.projects .h3 {
+  text-align: center;
+  padding-bottom: 15px;
+  text-shadow: 0 5px 10px black;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+.project-card {
+  box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  background: #fff;
+  outline: 0.1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 20px;
+}
+.project-card img {
+  width: 100%;
+}
+.project-card h4 {
+  font-size: 15px;
+  font-weight: 200;
+  margin: 5px 0px;
+  padding: 5px 15px;
+}
+.project-card p {
+  color: #767676;
+  font-size: 12px;
+  padding: 5px 15px;
+}
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+}
+.technologies p {
+  color: black;
+  background-color: #efefef;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 25px;
+  font-weight: 100;
+  font-size: small;
+}
+.project-card:hover {
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.4);
+  transform: scale(1.04);
+}
+/* Projects end */

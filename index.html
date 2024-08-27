@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rayan Adlirdard - Front-end Developer</title>
+    <link rel="preconnect" href="https://rsms.me/" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" type="text/javascript" defer></script>
+  </head>
+  <body>
+    <!-- navbar starts -->
+    <header class="row sticky white-bg">
+      <a href="#" class="logo row">
+        <img src="assets/logo.png" alt="logo" />
+      </a>
+      <div class="toggleMenu" onclick="toggleMenu();"></div>
+      <nav class="navigation row">
+        <ul class="row">
+          <li style="background-color: #ffb400">
+            <a href="#nav_home">Home</a>
+          </li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#nav_education">Education</a></li>
+          <li><a href="#nav_projects">Projects</a></li>
+          <li>
+            <a href="#nav_recommendations">Recommendations</a>
+          </li>
+          <li><a href="#nav_contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- navbar ends -->
+
+    <!-- hero -->
+
+    <section class="hero row white-bg">
+      <div>
+        <h2>I'm Rayan Adlirdard</h2>
+        <h2><span style="color: #ffb400">Front-end</span> Developer</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat
+          feugiat placerat lobortis. Natoque rutrum semper sed suspendisse nunc
+          lectus.
+        </p>
+        <button class="hero-btn">
+          HIRE ME <img src="/assets/right-arrow.png" alt="arrow" />
+        </button>
+      </div>
+      <div class="row">
+        <img src="/assets/hero-svg.png" alt="hero-section" />
+      </div>
+    </section>
+
+    <!-- projects -->
+
+    <section class="container projects" id="nav_projects">
+      <h3>Projects</h3>
+      <p>
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. lorem ipsum
+      </p>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="/assets/project1.png" alt="project1" />
+          <h4>How To Make Flyer Design</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consec adipiscing elit awd and lorem
+            ipsum...
+          </p>
+          <div class="technologies">
+            <p>Typescript</p>
+            <p>React.Js</p>
+            <p>Next.Js</p>
+            <p>CSS</p>
+            <p>HTML</p>
+            <p>MongoDB</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="/assets/project2.png" alt="project2" />
+          <h4>How To Make Flyer Design</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consec adipiscing elit awd and lorem
+            ipsum...
+          </p>
+          <div class="technologies">
+            <p>Typescript</p>
+            <p>React.Js</p>
+            <p>Next.Js</p>
+            <p>CSS</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="/assets/project3.png" alt="project3" />
+          <h4>How To Make Flyer Design</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consec adipiscing elit awd and lorem
+            ipsum...
+          </p>
+          <div class="technologies">
+            <p>Typescript</p>
+            <p>React.Js</p>
+            <p>Next.Js</p>
+            <p>CSS</p>
+            <p>HTML</p>
+            <p>MongoDB</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="/assets/project4.png" alt="project4" />
+          <h4>How To Make Flyer Design</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consec adipiscing elit awd and lorem
+            ipsum...
+          </p>
+          <div class="technologies">
+            <p>Typescript</p>
+            <p>React.Js</p>
+            <p>Next.Js</p>
+            <p>CSS</p>
+            <p>HTML</p>
+            <p>MongoDB</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="/assets/project5.png" alt="project5" />
+          <h4>How To Make Flyer Design</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consec adipiscing elit awd and lorem
+            ipsum...
+          </p>
+          <div class="technologies">
+            <p>Typescript</p>
+            <p>React.Js</p>
+            <p>Next.Js</p>
+            <p>CSS</p>
+            <p>HTML</p>
+            <p>MongoDB</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="/assets/project6.png" alt="project6" />
+          <h4>How To Make Flyer Design</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consec adipiscing elit awd and lorem
+            ipsum...
+          </p>
+          <div class="technologies">
+            <p>Typescript</p>
+            <p>React.Js</p>
+            <p>Next.Js</p>
+            <p>CSS</p>
+            <p>HTML</p>
+            <p>MongoDB</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- recommendations -->
+
+    <section class="recommendations" id="nav_recommendations">
+      <h3>Recommendations</h3>
+      <div class="recommendation-card">
+        <p>"Great Quality!"</p>
+        <p>- James Gouse, Graphic Designer</p>
+      </div>
+      <div class="recommendation-card">
+        <p>"Amazing Work!"</p>
+        <p>- Tiana Philips, Photographer</p>
+      </div>
+      <div class="recommendation-card">
+        <p>"Great Quality!"</p>
+        <p>- Talan Westervelt, Business Man</p>
+      </div>
+    </section>
+
+    <!-- contact -->
+
+    <section class="contact" id="nav_contact">
+      <h3>Leave ME Your Info</h3>
+      <form>
+        <input type="text" placeholder="Your Full Name (Required)" required />
+        <input type="email" placeholder="Your Email (Required)" required />
+        <input type="text" placeholder="Subject" />
+        <textarea placeholder="Leave Your Message"></textarea>
+        <button type="submit" class="btn">SEND MESSAGE</button>
+      </form>
+    </section>
+
+    <!-- footer -->
+
+    <footer>
+      <p>&copy; 2024 Copyright, All Right Reserved</p>
+      <div class="socials">
+        <a href="#">LinkedIn</a>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+      </div>
+    </footer>
+  </body>
+</html>
