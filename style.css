@@ -14,6 +14,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  line-height: 1.2;
 }
 body {
   background-color: #f0f0f6;
@@ -62,16 +63,19 @@ header {
   max-width: 350px;
 }
 nav ul {
-  gap: 2em;
+  gap: 1.5em;
   align-items: center;
 }
 nav a {
   font-weight: 300;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 /* Navbar ends */
+
+/* Hero starts */
 .hero {
+  position: static;
   gap: 1em;
   flex-wrap: wrap-reverse;
   align-items: center;
@@ -83,7 +87,7 @@ nav a {
 }
 .hero h2 {
   font-weight: 600;
-  font-size: clamp(35px, 5vw, 70px);
+  /* font-size: clamp(35px, 5vw, 70px); */
   line-height: 1;
 }
 .hero p {
@@ -166,12 +170,24 @@ nav a {
 /* Projects start */
 .projects {
   padding: 15px 9%;
-  padding-bottom: 100px;
 }
-.projects .h3 {
+.projects .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projects h2 {
   text-align: center;
-  padding-bottom: 15px;
-  text-shadow: 0 5px 10px black;
+  margin: 10px 0;
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+.projects .project-desc {
+  text-align: center;
+  line-height: 1.6;
+  margin: 10px 0;
+  color: #767676;
+  padding: 0px 150px;
 }
 .project-grid {
   display: grid;
@@ -217,3 +233,8 @@ nav a {
   transform: scale(1.04);
 }
 /* Projects end */
+@media screen and (max-width: 600px) {
+  .projects .project-desc {
+    padding: 0 10px;
+  }
+}
