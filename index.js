@@ -27,6 +27,8 @@ function toggleSticky() {
 const swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 10,
+  centeredSlides: true,
+  loop: true,
   breakpoints: {
     600: {
       slidesPerView: 2,
@@ -37,9 +39,9 @@ const swiper = new Swiper(".mySwiper", {
       spaceBetween: 30,
     },
   },
-  // autoplay: {
-  //   delay: 1000,
-  // },
+  autoplay: {
+    delay: 1500,
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
