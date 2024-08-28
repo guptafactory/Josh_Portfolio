@@ -39,9 +39,9 @@ const swiper = new Swiper(".mySwiper", {
       spaceBetween: 30,
     },
   },
-  autoplay: {
-    delay: 1500,
-  },
+  // autoplay: {
+  //   delay: 1500,
+  // },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
