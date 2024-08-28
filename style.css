@@ -625,17 +625,19 @@ nav a {
 .skills-card {
   border-radius: 5px;
   background: #fff;
-  padding: 20px;
+  padding: 25px 35px;
   transition: transform 0.3s ease-in-out;
+  justify-items: center;
 }
 .skills-card h4 {
-  font-size: 1rem;
+  font-size: 16px;
+  margin: 10px 10px;
   font-weight: 500;
 }
 .skills-card p {
+  font-size: 15px;
   margin: 0px 10px;
   padding: 10px 0px;
-  font-size: 16px;
   color: #767676;
   display: flex;
   flex-direction: row;
@@ -651,11 +653,42 @@ nav a {
 }
 
 .skills-card .bar {
-  width: 90%;
   height: 2px;
   background-color: #ffb400;
+  animation: progress 0.4s ease-in-out forwards;
 }
-/* .skills-card:hover {
+.skills-card .bar1 {
+  width: 90%;
+  animation-delay: 0.1s;
+}
+.skills-card .bar2 {
+  width: 85%;
+  animation-delay: 0.15s;
+}
+.skills-card .bar3 {
+  width: 80%;
+  animation-delay: 0.2s;
+}
+.skills-card .bar4 {
+  width: 75%;
+  animation-delay: 0.25s;
+}
+.skills-card .bar5 {
+  width: 85%;
+  animation-delay: 0.15s;
+}
+.skills-card:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.3);
+}
+@keyframes progress {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
-} */
 /* Skills ends */
