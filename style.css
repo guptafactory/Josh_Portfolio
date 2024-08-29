@@ -11,7 +11,6 @@
 }
 body {
   background-color: #f0f0f6;
-  padding-top: 121.6px;
 }
 img {
   max-width: 100%;
@@ -98,6 +97,13 @@ nav a {
   font-weight: 400;
   color: #333;
 }
+nav a:hover {
+  /* transform: scale(1.01); */
+  background: #fbcc60;
+  border-radius: 5px;
+  padding: 5px;
+  transition: 0.1s ease-in-out;
+}
 /* Navbar ends */
 
 /* Hero starts */
@@ -105,6 +111,7 @@ nav a {
   position: static;
   flex-wrap: wrap-reverse;
   align-items: center;
+  padding-top: 121.6px;
 }
 .hero > * {
   flex: 1 1 25rem;
@@ -587,8 +594,8 @@ nav a {
 
 .footer-bottom {
   text-align: center;
-  margin-top: 60px;
-  margin-bottom: 30px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
   font-size: 1rem;
   color: #767676;
 }
@@ -617,7 +624,9 @@ nav a {
 
 /* Skills start */
 .skills {
+  display: flex;
   padding: 15px 8%;
+  padding-top: 121.6px;
   margin-top: 20px;
 }
 .skills .header {
@@ -736,9 +745,9 @@ nav a {
   z-index: 20;
   font-weight: 600;
   top: 12%;
+  left: 25vw;
   border-radius: 5px;
   box-shadow: 2px 3px 10px 2px rgba(0, 0, 0, 0.2);
-  align-items: center;
 }
 .add-skill-modal header {
   /* display: flex; */
@@ -748,18 +757,31 @@ nav a {
   margin-top: 5%;
   font-weight: 700;
 }
+.skill-form {
+  margin: 1rem;
+}
+.skill-form label {
+  font-size: large;
+  margin-bottom: 10px;
+}
+.subskill-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+.subskill-header label {
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #767676;
+}
 .subskill-container {
   display: flex;
   flex-direction: row;
   gap: 2%;
   padding: 1% 0px;
 }
-.skill-form {
-  margin: 1rem;
-}
-.skill-form label {
-  font-size: large;
-  font-size: 500;
+.skill-form #domain {
+  margin: 4% 0;
 }
 .subskill-container input,
 .skill-form #domain {
@@ -772,9 +794,7 @@ nav a {
   border-radius: 5px;
   padding: 1rem;
 }
-.skill-form #domain {
-  margin: 1% 0;
-}
+
 .subskill-container .subskill-title {
   width: 70%;
 }
@@ -796,5 +816,16 @@ nav a {
   color: #ff5252;
   background-color: #efefef;
   border: 1px solid #ff5252;
+}
+
+@media screen and (max-width: 1000px) {
+  .add-skill-modal {
+    left: 14vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  .add-skill-modal {
+    left: 4%;
+  }
 }
 /* Skill form ends */

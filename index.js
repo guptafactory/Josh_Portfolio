@@ -3,6 +3,8 @@ const navigation = document.querySelector(".navigation");
 const navbar = document.querySelector("#navbar");
 const sticky = navbar.offsetTop;
 const addSkillModal = document.querySelector(".add-skill-modal");
+const homeContainer = document.querySelector("#nav_home");
+const skillsContainer = document.querySelector("#nav_skills");
 
 // Navbar starts
 function toggleMenu() {
@@ -30,8 +32,13 @@ document.querySelector(".nav__links").addEventListener("click", function (e) {
   if (e.target.classList.contains("nav__link")) {
     const id = e.target.getAttribute("href");
     if (id === "#nav_skills") {
+      skillsContainer.style.display = "block";
+      homeContainer.style.display = "none";
     } else {
+      skillsContainer.style.display = "none";
+      homeContainer.style.display = "block";
     }
+    // document.querySelector(id).;
     document.querySelector(id).scrollIntoView({ behavior: "smooth" });
   }
 });
@@ -73,13 +80,8 @@ const swiper = new Swiper(".mySwiper", {
 // Swiper ends
 
 function sendMessage() {}
+
 // Skills form starts
-function showSkillForm() {}
-function submitSkillForm(e) {
-  e.preventDefault();
-}
-function cancelSkillForm() {}
-// Skills form ends
 
 function openSkillForm() {
   addSkillModal.style.display = "block";
@@ -88,3 +90,10 @@ function openSkillForm() {
 function closeSkillForm() {
   addSkillModal.style.display = "none";
 }
+
+function submitSkillForm(e) {
+  e.preventDefault();
+}
+
+function cancelSkillForm() {}
+// Skills form ends
