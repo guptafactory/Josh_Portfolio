@@ -11,6 +11,7 @@
 }
 body {
   background-color: #f0f0f6;
+  padding-top: 121.6px;
 }
 img {
   max-width: 100%;
@@ -31,6 +32,7 @@ input::-webkit-inner-spin-button {
 }
 
 input[type="number"] {
+  appearance: textfield;
   -moz-appearance: textfield;
 }
 ul {
@@ -81,7 +83,7 @@ ul {
   top: 0;
   width: 100%;
   /* z-index: -1; */
-  z-index: 100;
+  z-index: 10;
 }
 .logo img {
   margin-left: 1rem;
@@ -101,17 +103,14 @@ nav a {
 /* Hero starts */
 .hero {
   position: static;
-  /* gap: 1rem; */
   flex-wrap: wrap-reverse;
   align-items: center;
-  height: 110%;
 }
 .hero > * {
   flex: 1 1 25rem;
 }
 .hero .hero-pic {
-  padding-top: 4.5rem;
-  width: 120%;
+  padding-top: 7rem;
   height: 101%;
 }
 .hero-text {
@@ -732,24 +731,35 @@ nav a {
 /* Skill form starts */
 .add-skill-modal {
   position: absolute;
-  outline: 1px solid #333;
   background: #fff;
-  width: 50%;
-  z-index: 1;
+  width: min(631px, 90%);
+  z-index: 20;
   font-weight: 600;
-  top: 70%;
+  top: 12%;
+  border-radius: 5px;
+  box-shadow: 2px 3px 10px 2px rgba(0, 0, 0, 0.2);
+  align-items: center;
 }
 .add-skill-modal header {
-  display: flex;
+  /* display: flex; */
   font-size: 3rem;
-  width: min(300px, 50%);
+  width: min(200px, 35%);
   margin: 0 auto;
+  margin-top: 5%;
+  font-weight: 700;
 }
 .subskill-container {
   display: flex;
   flex-direction: row;
   gap: 2%;
   padding: 1% 0px;
+}
+.skill-form {
+  margin: 1rem;
+}
+.skill-form label {
+  font-size: large;
+  font-size: 500;
 }
 .subskill-container input,
 .skill-form #domain {
@@ -775,12 +785,16 @@ nav a {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  gap: 1%;
+  gap: 2%;
+  margin-top: 3%;
 }
-.subskill-container .btn-skill2 {
+.form-buttonContainer .btn-skill2 {
   margin-left: 50px;
 }
-.subskill-container .btn-cancel {
+.form-buttonContainer .btn-cancel {
   width: 28%;
+  color: #ff5252;
+  background-color: #efefef;
+  border: 1px solid #ff5252;
 }
 /* Skill form ends */

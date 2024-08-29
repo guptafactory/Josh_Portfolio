@@ -16,7 +16,7 @@ window.onscroll = function () {
 
 // Adding the sticky class to the navbar when reaching its scroll position. Remove "sticky" when leaving the scroll position
 function toggleSticky() {
-  if (window.scrollY > sticky) {
+  if (window.scrollY >= sticky) {
     navbar.classList.add("sticky");
   } else {
     navbar.classList.remove("sticky");
