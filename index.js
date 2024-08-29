@@ -1,6 +1,8 @@
 const menu = document.querySelector(".toggleMenu");
 const navigation = document.querySelector(".navigation");
 const navbar = document.querySelector("#navbar");
+const navLinks = document.querySelectorAll(".nav__link");
+const navLinkContainer = document.querySelector(".nav__links");
 const sticky = navbar.offsetTop;
 const addSkillModal = document.querySelector(".add-skill-modal");
 const homeContainer = document.querySelector("#nav_home");
@@ -25,12 +27,14 @@ function toggleSticky() {
   }
 }
 
-document.querySelector(".nav__links").addEventListener("click", function (e) {
+// Toggling Home and Skills
+navLinkContainer.addEventListener("click", function (e) {
   e.preventDefault();
 
   // Matching strategy
   if (e.target.classList.contains("nav__link")) {
     const id = e.target.getAttribute("href");
+
     if (id === "#nav_skills") {
       skillsContainer.style.display = "block";
       homeContainer.style.display = "none";
@@ -38,8 +42,20 @@ document.querySelector(".nav__links").addEventListener("click", function (e) {
       skillsContainer.style.display = "none";
       homeContainer.style.display = "block";
     }
-    // document.querySelector(id).;
-    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+    e.target.classList.add("active-nav-link");
+
+    // Removing active-nav class on other links
+    navLinks.forEach((link) => {
+      if (link.getAttribute("href") !== id) {
+        link.classList.remove("active-nav-link");
+      }
+    });
+
+    if (menu.classList.contains("active")) toggleMenu();
+
+    if (id !== "#")
+      document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+    closeSkillForm();
   }
 });
 // Navbar ends
@@ -78,8 +94,14 @@ const swiper = new Swiper(".mySwiper", {
   },
 });
 // Swiper ends
-
-function sendMessage() {}
+function hire(e) {
+  console.log(e);
+}
+function sendMessage(e) {
+  // if (!e) return;
+  console.log(e);
+  // e.preventDefault();
+}
 
 // Skills form starts
 
@@ -92,8 +114,7 @@ function closeSkillForm() {
 }
 
 function submitSkillForm(e) {
+  if (!e) return;
   e.preventDefault();
 }
-
-function cancelSkillForm() {}
 // Skills form ends

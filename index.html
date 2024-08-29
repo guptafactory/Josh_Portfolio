@@ -27,9 +27,11 @@
 
       <nav class="navigation row">
         <ul class="nav__links row">
-          <li><a class="nav__link" href="#nav_home">Home</a></li>
+          <li>
+            <a class="nav__link active-nav-link" href="#">Home</a>
+          </li>
           <li><a class="nav__link" href="#nav_skills">Skills</a></li>
-          <li><a class="nav__link" href="#nav_home">Education</a></li>
+          <li><a class="nav__link" href="#nav_education">Education</a></li>
           <li><a class="nav__link" href="#nav_projects">Projects</a></li>
           <li>
             <a class="nav__link" href="#nav_recommendations">Recommendations</a>
@@ -40,6 +42,8 @@
     </header>
     <!-- navbar ends -->
 
+    <!-- Home starts -->
+    <span id="nav_education" style="display: none"></span>
     <!-- hero starts -->
     <main class="home" id="nav_home">
       <section class="hero row white-bg">
@@ -57,7 +61,7 @@
             type="button"
             value="HIRE ME &RightArrow;"
             class="btn btn-hero"
-            onclick="showSkillForm();"
+            onclick="(e) => hire(e);"
           />
         </div>
 
@@ -213,7 +217,10 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <figure>
-                <img src="/assets/recommendations_rating.png" alt="" />
+                <img
+                  src="/assets/recommendations_rating.png"
+                  alt="recommendation rating"
+                />
               </figure>
               <h4>Amazing Work!</h4>
               <p class="person-review">
@@ -237,7 +244,10 @@
 
             <div class="swiper-slide">
               <figure>
-                <img src="/assets/recommendations_rating.png" alt="" />
+                <img
+                  src="/assets/recommendations_rating.png"
+                  alt="recommendation rating"
+                />
               </figure>
               <h4>Great Quality!</h4>
               <p class="person-review">
@@ -288,7 +298,10 @@
 
             <div class="swiper-slide">
               <figure>
-                <img src="/assets/recommendations_rating.png" alt="" />
+                <img
+                  src="/assets/recommendations_rating.png"
+                  alt="recommendation rating"
+                />
               </figure>
               <h4>Amazing Work!</h4>
               <p class="person-review">
@@ -312,7 +325,10 @@
 
             <div class="swiper-slide">
               <figure>
-                <img src="/assets/recommendations_rating.png" alt="" />
+                <img
+                  src="/assets/recommendations_rating.png"
+                  alt="recommendation rating"
+                />
               </figure>
               <h4>Great Quality!</h4>
               <p class="person-review">
@@ -336,7 +352,10 @@
 
             <div class="swiper-slide">
               <figure>
-                <img src="/assets/recommendations_rating.png" alt="" />
+                <img
+                  src="/assets/recommendations_rating.png"
+                  alt="recommendation rating"
+                />
               </figure>
               <h4>Great Quality!</h4>
               <p class="person-review">
@@ -469,7 +488,9 @@
       </section>
       <!-- contact end -->
     </main>
+    <!-- Home ends -->
 
+    <!-- Skills start -->
     <main class="skills" id="nav_skills">
       <header>
         <h2>Skills & Languages</h2>
@@ -612,6 +633,8 @@
             <label for="skill">Skill</label>
             <label for="proficiency">Proficiency (%)</label>
           </div>
+
+          <!-- Subskill Inputs -->
           <div class="subskill-container">
             <input type="text" class="subskill-title" required />
             <input type="number" class="subskill-proficiency" required />
@@ -679,12 +702,7 @@
         </form>
       </div>
     </main>
-
-    <!--  -->
-    <!--  -->
-    <!--  -->
-    <!--  -->
-    <!--  -->
+    <!-- Skills end -->
 
     <!-- footer start -->
     <footer class="footer">
@@ -705,7 +723,7 @@
             <img src="/assets/footer_logo3.png" alt="Logo 3" />
           </figure>
         </a>
-        <a href="">
+        <a href="#">
           <figure>
             <img src="/assets/footer_logo4.png" alt="Logo 4" />
           </figure>
