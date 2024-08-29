@@ -24,6 +24,15 @@ a:visited {
   display: inline-block;
   text-decoration: none;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
 ul {
   list-style: none;
 }
@@ -33,7 +42,32 @@ ul {
 .white-bg {
   background-color: white;
 }
+.btn {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  outline: none;
 
+  padding: 10px 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  background-color: #ffb400;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-transform: capitalize;
+
+  height: 3rem;
+  width: min(180px, 100%);
+}
+.btn:hover {
+  background-color: #ffc337;
+}
+.btn:active {
+  transform: scale(0.98);
+}
 /* Navbar starts */
 #navbar {
   align-items: center;
@@ -46,6 +80,7 @@ ul {
   position: fixed;
   top: 0;
   width: 100%;
+  /* z-index: -1; */
   z-index: 100;
 }
 .logo img {
@@ -59,6 +94,7 @@ nav ul {
 nav a {
   font-size: 1rem;
   font-weight: 400;
+  color: #333;
 }
 /* Navbar ends */
 
@@ -94,17 +130,9 @@ nav a {
   margin: 2rem 0rem;
   padding: 1rem 0;
 }
-.hero-btn {
-  background-color: #ffb400;
-  border-radius: 5px;
-  border-style: none;
-  height: 3rem;
+.btn-hero {
   width: 10rem;
   margin-top: 10px;
-}
-.hero-btn img {
-  height: 10px;
-  width: 10px;
 }
 
 @media screen and (max-width: 900px) {
@@ -362,7 +390,7 @@ nav a {
   color: #767676;
   font-weight: 500;
 }
-.form-inputs input {
+.form-inputs .text-input {
   background-color: #f0f0f6;
   outline: none;
   border: none;
@@ -387,17 +415,12 @@ nav a {
   border-radius: 5px;
   padding: 1rem;
 }
-.form-inputs input:hover,
+.form-inputs .text-input:hover,
 .form-inputs textarea:hover {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
-.form .btn {
-  background-color: #ffb400;
+.btn-message {
   padding: 10px;
-  width: 20%;
-  border: none;
-  border-radius: 5px;
-  font-weight: 400;
 }
 /* Form ends */
 @media screen and (max-width: 1100px) {
@@ -408,7 +431,7 @@ nav a {
     width: 100%;
   }
   .form .btn {
-    width: 40%;
+    width: min(70%, 200px);
   }
 }
 
@@ -633,6 +656,7 @@ nav a {
   font-size: 16px;
   margin: 10px 10px;
   font-weight: 500;
+  color: #333;
 }
 .skills-card p {
   font-size: 15px;
@@ -691,4 +715,72 @@ nav a {
   }
 }
 
+.btn-skill1 {
+  display: flex;
+  padding: 10px 20px;
+  margin: 0 auto;
+  margin-top: 45px;
+}
+
+@media (min-width: 600px) {
+  .btn-skill {
+    width: auto;
+  }
+}
 /* Skills ends */
+
+/* Skill form starts */
+.add-skill-modal {
+  position: absolute;
+  outline: 1px solid #333;
+  background: #fff;
+  width: 50%;
+  z-index: 1;
+  font-weight: 600;
+  top: 70%;
+}
+.add-skill-modal header {
+  display: flex;
+  font-size: 3rem;
+  width: min(300px, 50%);
+  margin: 0 auto;
+}
+.subskill-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+  padding: 1% 0px;
+}
+.subskill-container input,
+.skill-form #domain {
+  background-color: #f0f0f6;
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 70px;
+  font-size: 1rem;
+  border-radius: 5px;
+  padding: 1rem;
+}
+.skill-form #domain {
+  margin: 1% 0;
+}
+.subskill-container .subskill-title {
+  width: 70%;
+}
+.subskill-container .subskill-proficiency {
+  width: 28%;
+}
+.form-buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 1%;
+}
+.subskill-container .btn-skill2 {
+  margin-left: 50px;
+}
+.subskill-container .btn-cancel {
+  width: 28%;
+}
+/* Skill form ends */

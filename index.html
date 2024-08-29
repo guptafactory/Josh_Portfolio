@@ -26,23 +26,15 @@
       <div class="toggleMenu" onclick="toggleMenu();"></div>
 
       <nav class="navigation row">
-        <ul class="row">
-          <li
-            style="
-              background-color: #ffb400;
-              padding: 12px;
-              border-radius: 10px;
-            "
-          >
-            <a href="#nav_home">Home</a>
-          </li>
-          <li><a href="#nav_skills">Skills</a></li>
-          <li><a href="#nav_education">Education</a></li>
-          <li><a href="#nav_projects">Projects</a></li>
+        <ul class="nav__links row">
+          <li><a class="nav__link" href="#nav_home">Home</a></li>
+          <li><a class="nav__link" href="#nav_skills">Skills</a></li>
+          <li><a class="nav__link" href="#nav_education">Education</a></li>
+          <li><a class="nav__link" href="#nav_projects">Projects</a></li>
           <li>
-            <a href="#nav_recommendations">Recommendations</a>
+            <a class="nav__link" href="#nav_recommendations">Recommendations</a>
           </li>
-          <li><a href="#nav_contact">Contact</a></li>
+          <li><a class="nav__link" href="#nav_contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -61,10 +53,12 @@
             volutpat feugiat placerat lobortis. Natoque rutrum semper sed
             suspendisse nunc lectus.
           </p>
-
-          <button class="hero-btn">
-            HIRE ME <img src="/assets/right-arrow.png" alt="arrow" />
-          </button>
+          <input
+            type="button"
+            value="HIRE ME &RightArrow;"
+            class="btn btn-hero"
+            onclick="showSkillForm();"
+          />
         </div>
 
         <div class="row">
@@ -378,13 +372,25 @@
           <header>Leave ME Your Info</header>
           <form class="form-inputs">
             <label for="fullName">Your Full Name (Required)</label>
-            <input type="text" id="fullName" name="fullName" required />
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              class="text-input"
+              required
+            />
 
             <label for="email">Your Email (Required)</label>
-            <input type="email" id="email" name="email" required />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="text-input"
+              required
+            />
 
             <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" />
+            <input type="text" id="subject" name="subject" class="text-input" />
 
             <label for="message">Your Message</label>
             <textarea
@@ -395,7 +401,12 @@
               cols="50"
             ></textarea>
 
-            <button type="submit" class="btn">SEND MESSAGE</button>
+            <input
+              type="button"
+              value="SEND MESSAGE"
+              class="btn btn-message"
+              onclick="sendMessage();"
+            />
           </form>
         </div>
 
@@ -581,6 +592,76 @@
             <div class="bar bar2"></div>
           </div>
         </div>
+      </div>
+      <input
+        type="button"
+        value="Add Skill"
+        class="btn btn-skill1"
+        onclick="openSkillForm();"
+      />
+
+      <div class="add-skill-modal">
+        <header>Add Skill</header>
+        <form class="skill-form form-inputs">
+          <label for="domain">Domain</label>
+          <input
+            type="text"
+            id="domain"
+            name="domain"
+            placeholder="Front End Developer"
+            required
+          />
+
+          <label for="skills">Skills</label>
+          <div class="subskill-container">
+            <label for="skill">Skill</label>
+            <label for="proficiency">Proficiency (%)</label>
+          </div>
+          <div class="subskill-container">
+            <input type="text" class="subskill-title" required />
+            <input type="number" class="subskill-proficiency" required />
+          </div>
+          <div class="subskill-container">
+            <input type="text" class="subskill-title" />
+            <input
+              type="number"
+              class="subskill-proficiency"
+              min="0"
+              max="100"
+            />
+          </div>
+          <div class="subskill-container">
+            <input type="text" class="subskill-title" />
+            <input type="number" class="subskill-proficiency" />
+          </div>
+          <div class="subskill-container">
+            <input type="text" class="subskill-title" />
+            <input type="number" class="subskill-proficiency" />
+          </div>
+          <div class="subskill-container">
+            <input type="text" class="subskill-title" />
+            <input type="number" class="subskill-proficiency" />
+          </div>
+          <div class="subskill-container">
+            <input type="text" class="subskill-title" />
+            <input type="number" class="subskill-proficiency" />
+          </div>
+          <div class="form-buttonContainer">
+            <!-- Buttons -->
+            <input
+              type="button"
+              value="Add Skill"
+              class="btn btn-skill2"
+              onclick="submitSkillForm();"
+            />
+            <input
+              type="button"
+              value="Cancel"
+              class="btn btn-cancel"
+              onclick="closeSkillForm();"
+            />
+          </div>
+        </form>
       </div>
     </main>
 
