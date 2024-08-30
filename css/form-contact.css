@@ -31,6 +31,7 @@
 }
 
 .form-inputs .text-input {
+  text-transform: none;
   background-color: #f0f0f6;
   outline: none;
   border: none;
@@ -44,6 +45,7 @@
 }
 
 .form-inputs textarea {
+  text-transform: none;
   background-color: #f0f0f6;
   resize: none;
   outline: none;
