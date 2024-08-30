@@ -44,6 +44,10 @@
 
     <!-- Home starts -->
     <span id="nav_education" style="display: none"></span>
+
+    <!-- Form Dialog -->
+    <dialog id="dialog" class="dialog hidden"></dialog>
+
     <!-- hero starts -->
     <main class="home" id="nav_home">
       <section class="hero row white-bg">
@@ -58,10 +62,10 @@
             suspendisse nunc lectus.
           </p>
           <input
-            type="button"
+            type="submit"
             value="HIRE ME &RightArrow;"
             class="btn btn-hero"
-            onclick="(e) => hire(e);"
+            onclick="hire();"
           />
         </div>
 
@@ -389,7 +393,7 @@
       <section class="form-contact" id="nav_contact">
         <div class="form">
           <header>Leave ME Your Info</header>
-          <form class="form-inputs">
+          <form class="form-inputs contact-form">
             <label for="fullName">Your Full Name (Required)</label>
             <input
               type="text"
@@ -421,10 +425,10 @@
             ></textarea>
 
             <input
-              type="button"
+              type="submit"
+              id="btn-message"
               value="SEND MESSAGE"
               class="btn btn-message"
-              onclick="sendMessage();"
             />
           </form>
         </div>
@@ -637,14 +641,21 @@
           <!-- Subskill Inputs -->
           <div class="subskill-container">
             <input type="text" class="subskill-title" required />
-            <input type="number" class="subskill-proficiency" required />
+            <input
+              type="number"
+              class="subskill-proficiency"
+              min="1"
+              max="100"
+              required
+            />
           </div>
+
           <div class="subskill-container">
             <input type="text" class="subskill-title" />
             <input
               type="number"
               class="subskill-proficiency"
-              min="0"
+              min="1"
               max="100"
             />
           </div>
@@ -653,7 +664,7 @@
             <input
               type="number"
               class="subskill-proficiency"
-              min="0"
+              min="1"
               max="100"
             />
           </div>
@@ -662,7 +673,7 @@
             <input
               type="number"
               class="subskill-proficiency"
-              min="0"
+              min="1"
               max="100"
             />
           </div>
@@ -671,27 +682,14 @@
             <input
               type="number"
               class="subskill-proficiency"
-              min="0"
+              min="1"
               max="100"
             />
           </div>
-          <div class="subskill-container">
-            <input type="text" class="subskill-title" />
-            <input
-              type="number"
-              class="subskill-proficiency"
-              min="0"
-              max="100"
-            />
-          </div>
+
           <div class="form-buttonContainer">
             <!-- Buttons -->
-            <input
-              type="button"
-              value="Add Skill"
-              class="btn btn-skill2"
-              onclick="submitSkillForm();"
-            />
+            <input type="submit" value="Add Skill" class="btn btn-skill2" />
             <input
               type="button"
               value="Cancel"

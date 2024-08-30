@@ -443,6 +443,41 @@ nav a:hover {
   }
 }
 
+/* Success Dialog starts */
+.dialog {
+  position: fixed;
+  display: block;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform: translate(-50%, -50%) scale(0.8);
+  opacity: 0;
+}
+
+.dialog.show {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.dialog.hidden {
+  display: none;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .dialog {
+    width: 80%;
+  }
+}
+/* Success Dialog ends */
+
 /* Contact starts */
 .contact-container {
   display: flex;
@@ -768,7 +803,7 @@ nav a:hover {
 .subskill-header {
   display: flex;
   justify-content: space-between;
-  padding: 0px 10px;
+  padding-right: 2.5%;
 }
 .subskill-header label {
   margin-top: 15px;
@@ -797,10 +832,10 @@ nav a:hover {
 }
 
 .subskill-container .subskill-title {
-  width: 70%;
+  width: 75%;
 }
 .subskill-container .subskill-proficiency {
-  width: 28%;
+  width: 23%;
 }
 .form-buttonContainer {
   display: flex;
@@ -813,7 +848,7 @@ nav a:hover {
   margin-left: 50px;
 }
 .form-buttonContainer .btn-cancel {
-  width: 28%;
+  width: 23%;
   color: #ff5252;
   background-color: #efefef;
   border: 1px solid #ff5252;
