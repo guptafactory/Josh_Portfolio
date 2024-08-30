@@ -38,8 +38,13 @@
   border-radius: 5px;
   background: #fff;
   padding: 25px 35px;
-  transition: transform 0.3s ease-in-out;
   justify-items: center;
+
+  transition: transform 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out;
+  -moz-transition: transform 0.3s ease-in-out;
+  -ms-transition: transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
 }
 
 .skills-card h4 {
@@ -71,7 +76,12 @@
 .skills-card .bar {
   height: 2px;
   background-color: #ffb400;
+
   animation: progress 0.4s ease-in-out forwards;
+  -webkit-animation: progress 0.4s ease-in-out forwards;
+  -moz-animation: progress 0.4s ease-in-out forwards;
+  -ms-animation: progress 0.4s ease-in-out forwards;
+  -o-animation: progress 0.4s ease-in-out forwards;
 }
 
 .skills-card .bar1 {
@@ -99,8 +109,13 @@
 }
 
 .skills-card:hover {
-  transform: scale(1.05);
   box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.3);
+
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
 }
 
 .btn-skill1 {

@@ -46,7 +46,10 @@ input::-webkit-inner-spin-button {
 
 input[type="number"] {
   appearance: textfield;
+  -webkit-appearance: textfield;
   -moz-appearance: textfield;
+  -ms-appearance: textfield;
+  -o-appearance: textfield;
 }
 ul {
   list-style: none;
@@ -61,6 +64,8 @@ ul {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
   border: none;
   outline: none;
 
@@ -71,15 +76,23 @@ ul {
   background-color: #ffb400;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
   text-transform: capitalize;
-
   height: 3rem;
   width: min(180px, 100%);
+
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  -webkit-transition: background-color 0.3s ease, transform 0.2s ease;
+  -moz-transition: background-color 0.3s ease, transform 0.2s ease;
+  -ms-transition: background-color 0.3s ease, transform 0.2s ease;
+  -o-transition: background-color 0.3s ease, transform 0.2s ease;
 }
 .btn:hover {
   background-color: #ffc337;
 }
 .btn:active {
   transform: scale(0.98);
+  -webkit-transform: scale(0.98);
+  -moz-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  -o-transform: scale(0.98);
 }

@@ -12,7 +12,6 @@
 }
 
 .add-skill-modal header {
-  /* display: flex; */
   font-size: 3rem;
   width: min(200px, 35%);
   margin: 0 auto;

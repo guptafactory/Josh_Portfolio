@@ -2,17 +2,21 @@
 
 <p id="description">This project is a frontend assignment focusing on creating a portfolio website for a developer.</p>
 
+<h2>Project Screenshots:</h2>
+
+<img src="" alt="project screenshot1" width="400" height="400/">
+
 <h2>🧐 Features</h2>
 
 Here're some of the project's best features:
 
-* Personal Introduction: A brief biography or introduction highlighting skills experience and career goals.
-* Project Showcase: A curated list of projects with descriptions technologies used challenges faced and outcomes.
-* Technical Skills: A section detailing programming languages frameworks tools and other relevant technical skills.
-* Contact Information: Easy-to-find contact form email address or links to social media profiles.
-* Testimonials/Recommendations: Quotes or recommendations from colleagues clients or mentors.
-* Interactive Elements: Interactive components like code snippets or demos to showcase technical abilities.
-* Responsive Design: Mobile-friendly design ensuring a seamless experience across devices.
+- Personal Introduction: A brief biography or introduction highlighting skills experience and career goals.
+- Project Showcase: A curated list of projects with descriptions technologies used challenges faced and outcomes.
+- Technical Skills: A section detailing programming languages frameworks tools and other relevant technical skills.
+- Contact Information: Easy-to-find contact form email address or links to social media profiles.
+- Testimonials/Recommendations: Quotes or recommendations from colleagues clients or mentors.
+- Interactive Elements: Interactive components like code snippets or demos to showcase technical abilities.
+- Responsive Design: Mobile-friendly design ensuring a seamless experience across devices.
 
 <h2>🛠️ Installation Steps:</h2>
 
@@ -44,7 +48,7 @@ Start exploring the projects on different viewports.
 
 Technologies used in the project:
 
-* HTML
-* Vanilla CSS
-* Vanilla Javascript
-* Swiper library (for carousel)
+- HTML
+- Vanilla CSS
+- Vanilla Javascript
+- Swiper library (for carousel)
