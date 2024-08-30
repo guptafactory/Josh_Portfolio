@@ -195,5 +195,6 @@ skillForm.addEventListener("submit", function (e) {
 });
 
 window.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") closeSkillForm();
+  if (e.key === "Escape" && addSkillModal.style.display === "block")
+    closeSkillForm();
 });
