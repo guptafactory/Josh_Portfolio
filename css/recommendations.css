@@ -1,0 +1,104 @@
+/* Recommendations start */
+.recommendations {
+  padding: 15px 8%;
+}
+
+.recommendations .header {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.recommendations h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.recommendations-desc {
+  color: #767676;
+  text-align: center;
+  line-height: 1.6;
+  margin: 1.5rem 0;
+  padding: 0px 250px;
+}
+
+/* Swiper starts */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-pagination {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.swiper-button-prev {
+  padding-right: 50px;
+  color: #ffb400;
+}
+
+.swiper-button-next {
+  padding-left: 50px;
+  color: #ffb400;
+}
+
+.swiper-pagination-bullet {
+  background-color: #ffb400;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  justify-content: center;
+}
+
+.swiper-slide h4 {
+  font-weight: 500;
+  font-size: 18px;
+  padding-top: 15px;
+}
+
+.swiper-slide:hover {
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.1);
+  transform: scale(1.01);
+}
+
+.person-profile {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.person-review {
+  color: #767676;
+  margin: 15px 0px;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.person-details {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  margin-left: 25px;
+}
+
+.person-details p {
+  color: #767676;
+  padding: 5px 5px;
+  font-size: 13px;
+}
+/* Swiper ends */
+
+@media screen and (max-width: 780px) {
+  .recommendations .recommendations-desc {
+    padding: 0 10px;
+  }
+}
+/* Recommendations end */

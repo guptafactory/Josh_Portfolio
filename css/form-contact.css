@@ -1,0 +1,148 @@
+/* Form starts */
+.form-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 0 7%;
+}
+
+.form-contact header {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 20px 0px;
+  padding: 20px 0px;
+}
+
+.form {
+  width: 67%;
+}
+
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.form-inputs label {
+  color: #767676;
+  font-weight: 500;
+}
+
+.form-inputs .text-input {
+  background-color: #f0f0f6;
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 50px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  font-size: 1rem;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.form-inputs textarea {
+  background-color: #f0f0f6;
+  resize: none;
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 200px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  font-size: 1rem;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.form-inputs .text-input:hover,
+.form-inputs textarea:hover {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.btn-message {
+  padding: 10px;
+}
+
+@media screen and (max-width: 1100px) {
+  .form-contact {
+    flex-direction: column;
+  }
+  .form {
+    width: 100%;
+  }
+  .form .btn {
+    width: min(70%, 200px);
+  }
+}
+/* Form ends */
+
+/* Contact starts */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.contact-card {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 20px;
+  height: 219.5px;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.contact-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.contact-card .icon {
+  display: flex;
+  align-items: center;
+}
+
+.contact-card .icon img {
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  background-color: #ffb400;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease-in-out;
+}
+.info p {
+  padding: 7px 3px;
+  font-size: 16px;
+  color: #767676;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cardinfo-title {
+  font-weight: 500;
+}
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+  .contact-card {
+    padding: 15px;
+  }
+  .contact-card .icon img {
+    width: 40px;
+    height: 40px;
+  }
+  .info p {
+    font-size: 14px;
+  }
+}
+/* Contact ends */

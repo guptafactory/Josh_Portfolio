@@ -1,0 +1,123 @@
+/* Hero starts */
+.hero {
+  position: static;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  padding-top: 121.6px;
+}
+
+.hero > * {
+  flex: 1 1 25rem;
+}
+
+.hero .hero-pic {
+  padding-top: 7rem;
+  height: 101%;
+}
+
+.hero-text {
+  padding-left: 6rem;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+.hero p {
+  color: #767676;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5rem;
+  margin: 2rem 0rem;
+  padding: 1rem 0;
+}
+
+.btn-hero {
+  width: 10rem;
+  margin-top: 10px;
+}
+
+.hero-img-icons {
+  position: relative;
+}
+
+.hero-img-icons .icon {
+  position: absolute;
+  z-index: 5;
+}
+
+/* Specific positions for each icon */
+.hero-img-icons .icon1 {
+  top: 9%;
+  left: -93%;
+}
+
+.hero-img-icons .icon2 {
+  top: 19%;
+  left: 12%;
+}
+
+.hero-img-icons .icon3 {
+  top: 21%;
+  left: 80%;
+}
+
+.hero-img-icons .icon4 {
+  top: 69%;
+  left: -19%;
+}
+
+.hero-img-icons .icon5 {
+  top: 88%;
+  left: -80%;
+}
+
+.hero-img-icons .icon6 {
+  top: 81.6%;
+  left: 20%;
+}
+
+.hero-img-icons .icon7 {
+  top: 92%;
+  left: 84.5%;
+}
+
+@media screen and (max-width: 800px) {
+  .hero-img-icons .icon1 {
+    top: 109%;
+    left: 2%;
+  }
+
+  .hero-img-icons .icon4 {
+    top: 158%;
+    left: 78%;
+  }
+
+  .hero-img-icons .icon5 {
+    top: 173%;
+    left: 9%;
+  }
+
+  .hero-text {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .hero-img-icons .icon3 {
+    top: 27%;
+  }
+
+  .hero-img-icons .icon4 {
+    top: 220%;
+    left: 78%;
+  }
+
+  .hero-img-icons .icon5 {
+    top: 247%;
+    left: 15%;
+  }
+}
+/* Hero ends */

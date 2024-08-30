@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="index.js" type="text/javascript" defer></script>
@@ -25,6 +25,7 @@
       </a>
       <div class="toggleMenu" onclick="toggleMenu();"></div>
 
+      <!-- Navlinks -->
       <nav class="navigation row">
         <ul class="nav__links row">
           <li>
@@ -42,14 +43,14 @@
     </header>
     <!-- navbar ends -->
 
-    <!-- Home starts -->
     <span id="nav_education" style="display: none"></span>
 
     <!-- Form Dialog -->
     <dialog id="dialog" class="dialog hidden"></dialog>
 
-    <!-- hero starts -->
+    <!-- Home starts -->
     <main class="home" id="nav_home">
+      <!-- hero starts -->
       <section class="hero row white-bg">
         <div class="hero-text">
           <h2>
@@ -61,6 +62,7 @@
             volutpat feugiat placerat lobortis. Natoque rutrum semper sed
             suspendisse nunc lectus.
           </p>
+
           <input
             type="submit"
             value="HIRE ME &RightArrow;"
@@ -69,14 +71,52 @@
           />
         </div>
 
-        <div class="row">
+        <!-- Hero Image -->
+        <div class="hero-img-icons">
           <figure>
             <img
               src="/assets/hero-svg.png"
-              alt="hero-section"
+              alt="hero section image"
               class="hero-pic"
             />
           </figure>
+
+          <!-- Hero Icons -->
+          <img
+            src="/assets/icon-circle-yellow.png"
+            alt="icon 1"
+            class="icon icon1"
+          />
+          <img
+            src="/assets/icon-circle-green.png"
+            alt="icon 2"
+            class="icon icon2"
+          />
+          <img
+            src="/assets/icon-rectangle-yellow.png"
+            alt="icon 3"
+            class="icon icon3"
+          />
+          <img
+            src="/assets/icon-square-blue.png"
+            alt="icon 4"
+            class="icon icon4"
+          />
+          <img
+            src="/assets/icon-circle-green.png"
+            alt="icon 5"
+            class="icon icon5"
+          />
+          <img
+            src="/assets/icon-circle-yellow.png"
+            alt="icon 6"
+            class="icon icon6"
+          />
+          <img
+            src="/assets/icon-triangle-red.png"
+            alt="icon 7"
+            class="icon icon7"
+          />
         </div>
       </section>
 
@@ -90,10 +130,11 @@
           </p>
         </header>
 
+        <!-- Project Grid -->
         <div class="project-grid">
           <div class="project-card">
             <figure>
-              <img src="/assets/project1.png" alt="project1" />
+              <img src="/assets/project1.png" alt="project 1" />
             </figure>
             <h4>How To Make Flyer Design</h4>
             <p class="projectcard-text">
@@ -113,7 +154,7 @@
 
           <div class="project-card">
             <figure>
-              <img src="/assets/project2.png" alt="project2" />
+              <img src="/assets/project2.png" alt="project 2" />
             </figure>
             <h4>How To Make Flyer Design</h4>
             <p class="projectcard-text">
@@ -130,26 +171,7 @@
 
           <div class="project-card">
             <figure>
-              <img src="/assets/project3.png" alt="project3" />
-            </figure>
-            <h4>How To Make Flyer Design</h4>
-            <p class="projectcard-text">
-              Lorem ipsum dolor sit amet, consec adipiscing elit awd and lorem
-              ipsum...
-            </p>
-            <div class="technologies">
-              <p>Typescript</p>
-              <p>React.Js</p>
-              <p>Next.Js</p>
-              <p>CSS</p>
-              <p>HTML</p>
-              <p>MongoDB</p>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <figure>
-              <img src="/assets/project4.png" alt="project4" />
+              <img src="/assets/project3.png" alt="project 3" />
             </figure>
             <h4>How To Make Flyer Design</h4>
             <p class="projectcard-text">
@@ -168,7 +190,7 @@
 
           <div class="project-card">
             <figure>
-              <img src="/assets/project5.png" alt="project5" />
+              <img src="/assets/project4.png" alt="project 4" />
             </figure>
             <h4>How To Make Flyer Design</h4>
             <p class="projectcard-text">
@@ -187,7 +209,26 @@
 
           <div class="project-card">
             <figure>
-              <img src="/assets/project6.png" alt="project6" />
+              <img src="/assets/project5.png" alt="project 5" />
+            </figure>
+            <h4>How To Make Flyer Design</h4>
+            <p class="projectcard-text">
+              Lorem ipsum dolor sit amet, consec adipiscing elit awd and lorem
+              ipsum...
+            </p>
+            <div class="technologies">
+              <p>Typescript</p>
+              <p>React.Js</p>
+              <p>Next.Js</p>
+              <p>CSS</p>
+              <p>HTML</p>
+              <p>MongoDB</p>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <figure>
+              <img src="/assets/project6.png" alt="project 6" />
             </figure>
             <h4>How To Make Flyer Design</h4>
             <p class="projectcard-text">
@@ -217,6 +258,7 @@
           </p>
         </header>
 
+        <!-- Swiper -->
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -236,7 +278,7 @@
                 <figure>
                   <img
                     src="/assets/recommendations_pf2.png"
-                    alt="profile-pic"
+                    alt="profile pic"
                   />
                 </figure>
                 <div class="person-details">
@@ -263,7 +305,7 @@
                 <figure>
                   <img
                     src="/assets/recommendations_pf3.png"
-                    alt="profile-pic"
+                    alt="profile pic"
                   />
                 </figure>
                 <div class="person-details">
@@ -290,7 +332,7 @@
                 <figure>
                   <img
                     src="/assets/recommendations_pf1.png"
-                    alt="profile-pic"
+                    alt="profile pic"
                   />
                 </figure>
                 <div class="person-details">
@@ -317,7 +359,7 @@
                 <figure>
                   <img
                     src="/assets/recommendations_pf2.png"
-                    alt="profile-pic"
+                    alt="profile pic"
                   />
                 </figure>
                 <div class="person-details">
@@ -344,7 +386,7 @@
                 <figure>
                   <img
                     src="/assets/recommendations_pf3.png"
-                    alt="profile-pic"
+                    alt="profile pic"
                   />
                 </figure>
                 <div class="person-details">
@@ -371,7 +413,7 @@
                 <figure>
                   <img
                     src="/assets/recommendations_pf1.png"
-                    alt="profile-pic"
+                    alt="profile pic"
                   />
                 </figure>
                 <div class="person-details">
@@ -381,6 +423,8 @@
               </div>
             </div>
           </div>
+
+          <!-- Swiper Controls -->
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-pagination"></div>
@@ -389,10 +433,12 @@
 
       <!-- recommendations end -->
 
-      <!-- contact start -->
+      <!-- form and contact start -->
       <section class="form-contact" id="nav_contact">
         <div class="form">
           <header>Leave ME Your Info</header>
+
+          <!-- Contact form -->
           <form class="form-inputs contact-form">
             <label for="fullName">Your Full Name (Required)</label>
             <input
@@ -433,6 +479,7 @@
           </form>
         </div>
 
+        <!-- Contacts -->
         <div class="contacts">
           <header>Contact Information</header>
           <div class="contact-container">
@@ -504,6 +551,7 @@
         </p>
       </header>
 
+      <!-- Skill Cards Grid -->
       <div class="skills-grid">
         <div class="skills-card">
           <h4>Front End Development</h4>
@@ -613,6 +661,8 @@
           </div>
         </div>
       </div>
+
+      <!-- Open Skill form Button -->
       <input
         type="button"
         value="Add Skill"
@@ -620,6 +670,7 @@
         onclick="openSkillForm();"
       />
 
+      <!-- Skill modal dialog -->
       <div class="add-skill-modal">
         <header>Add Skill</header>
         <form class="skill-form">
@@ -659,6 +710,7 @@
               max="100"
             />
           </div>
+
           <div class="subskill-container">
             <input type="text" class="subskill-title" />
             <input
@@ -668,6 +720,7 @@
               max="100"
             />
           </div>
+
           <div class="subskill-container">
             <input type="text" class="subskill-title" />
             <input
@@ -677,6 +730,7 @@
               max="100"
             />
           </div>
+
           <div class="subskill-container">
             <input type="text" class="subskill-title" />
             <input
@@ -688,7 +742,7 @@
           </div>
 
           <div class="form-buttonContainer">
-            <!-- Buttons -->
+            <!-- Buttons (Submit and Cancel)-->
             <input type="submit" value="Add Skill" class="btn btn-skill2" />
             <input
               type="button"
@@ -705,7 +759,7 @@
     <!-- footer start -->
     <footer class="footer">
       <div class="logos row">
-        <!-- Logo Section -->
+        <!-- Logos -->
         <a href="#">
           <figure>
             <img src="/assets/footer_logo1.png" alt="Logo 1" />
@@ -728,6 +782,7 @@
         </a>
       </div>
 
+      <!-- Footer Main Logo -->
       <div class="footer-mainLogo">
         <a href="#">
           <figure>
@@ -747,6 +802,7 @@
             </a>
             <p>4.5/5 Rating On Lorem</p>
           </div>
+
           <div class="rating">
             <a href="#">
               <figure>
@@ -755,6 +811,7 @@
             </a>
             <p>9/10 Rating On Ipsum</p>
           </div>
+
           <div class="rating">
             <a href="#">
               <figure>
@@ -813,6 +870,6 @@
         <p>&copy; 2024 Copyright, All Rights Reserved</p>
       </div>
     </footer>
-    <!-- footer end -->
+    <!-- footer ends -->
   </body>
 </html>

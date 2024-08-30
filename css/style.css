@@ -1,0 +1,84 @@
+/* Inter font import */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* All css files imports */
+@import url("/css/dialog.css");
+@import url("/css/nav.css");
+@import url("/css/hero.css");
+@import url("/css/project.css");
+@import url("/css/recommendations.css");
+@import url("/css/form-contact.css");
+@import url("/css/skills.css");
+@import url("/css/skills-form.css");
+@import url("/css/footer.css");
+
+/* General CSS (for reusability) */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f0f0f6;
+}
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+a,
+a::before,
+a::after,
+a:visited {
+  color: black;
+  display: inline-block;
+  text-decoration: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+ul {
+  list-style: none;
+}
+.row {
+  display: flex;
+}
+.white-bg {
+  background-color: white;
+}
+.btn {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  outline: none;
+
+  padding: 10px 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  background-color: #ffb400;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-transform: capitalize;
+
+  height: 3rem;
+  width: min(180px, 100%);
+}
+.btn:hover {
+  background-color: #ffc337;
+}
+.btn:active {
+  transform: scale(0.98);
+}

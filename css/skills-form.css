@@ -1,0 +1,104 @@
+/* Skill form starts */
+.add-skill-modal {
+  position: absolute;
+  background: #fff;
+  width: min(631px, 90%);
+  z-index: 20;
+  font-weight: 600;
+  top: 12%;
+  left: 25vw;
+  border-radius: 5px;
+  box-shadow: 2px 3px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.add-skill-modal header {
+  /* display: flex; */
+  font-size: 3rem;
+  width: min(200px, 35%);
+  margin: 0 auto;
+  margin-top: 5%;
+  font-weight: 700;
+}
+
+.skill-form {
+  margin: 1rem;
+}
+
+.skill-form label {
+  font-size: large;
+  margin-bottom: 10px;
+}
+
+.subskill-header {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 2.5%;
+}
+
+.subskill-header label {
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #767676;
+}
+
+.subskill-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+  padding: 1% 0px;
+}
+
+.skill-form #domain {
+  margin: 4% 0;
+}
+
+.subskill-container input,
+.skill-form #domain {
+  background-color: #f0f0f6;
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 70px;
+  font-size: 1rem;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.subskill-container .subskill-title {
+  width: 75%;
+}
+
+.subskill-container .subskill-proficiency {
+  width: 23%;
+}
+
+.form-buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 2%;
+  margin-top: 3%;
+}
+
+.form-buttonContainer .btn-skill2 {
+  margin-left: 50px;
+}
+
+.form-buttonContainer .btn-cancel {
+  width: 23%;
+  color: #ff5252;
+  background-color: #efefef;
+  border: 1px solid #ff5252;
+}
+
+@media screen and (max-width: 1000px) {
+  .add-skill-modal {
+    left: 14vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  .add-skill-modal {
+    left: 4%;
+  }
+}
+/* Skill form ends */
