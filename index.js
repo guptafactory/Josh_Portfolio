@@ -18,13 +18,14 @@ const sticky = navbar.offsetTop;
 if (contactForm) contactForm.reset();
 if (skillForm) skillForm.reset();
 
-// Navbar starts
+///// Responsive Nav /////
+
 function toggleMenu() {
   menu.classList.toggle("active");
   navigation.classList.toggle("active");
 }
 
-// Sticky Nav
+///// Sticky Nav /////
 // When the user scrolls the page, execute toggleSticky
 window.onscroll = () => toggleSticky();
 
@@ -34,7 +35,8 @@ function toggleSticky() {
   else navbar.classList.remove("sticky");
 }
 
-// Toggling Home and Skills
+///// Toggling Home and Skills /////
+
 navLinkContainer.addEventListener("click", function (e) {
   e.preventDefault();
 
@@ -66,9 +68,9 @@ navLinkContainer.addEventListener("click", function (e) {
     closeSkillForm();
   }
 });
-// Navbar ends
 
-// Swiper starts
+///// Swiper /////
+
 const swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 10,
@@ -89,9 +91,6 @@ const swiper = new Swiper(".mySwiper", {
       spaceBetween: 30,
     },
   },
-  // autoplay: {
-  //   delay: 1500,
-  // },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -101,11 +100,10 @@ const swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
-// Swiper ends
 
 function hire() {} // Dummy function
 
-// Dialog (success or failure)
+///// Dialog (success or failure) /////
 
 function executeDialog(str) {
   if (str === "success") {
@@ -132,7 +130,8 @@ function executeDialog(str) {
   }, 2000);
 }
 
-// Contact form
+///// Contact form /////
+
 contactForm.addEventListener("submit", function (e) {
   e.preventDefault();
 
@@ -152,7 +151,7 @@ contactForm.addEventListener("submit", function (e) {
   contactForm.reset();
 });
 
-// Skills form starts
+///// Skill Form /////
 
 function openSkillForm() {
   addSkillModal.style.display = "block";
@@ -186,12 +185,10 @@ skillForm.addEventListener("submit", function (e) {
       return;
     }
 
+    // storing for future use
     subskillArr.push(subskill);
     proficiencyArr.push(proficiency);
   }
-
-  console.log(subskillArr);
-  console.log(proficiencyArr);
 
   executeDialog("success");
   closeSkillForm();
@@ -200,4 +197,3 @@ skillForm.addEventListener("submit", function (e) {
 window.addEventListener("keydown", (e) => {
   if (e.key === "Escape") closeSkillForm();
 });
-// Skills form ends
